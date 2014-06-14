@@ -20,7 +20,9 @@ h1.title {
   font-weight: bold;
   margin: 0;
   display: block;
-  float: left; }
+  float: left;
+  color: purple;
+  border: dashed; }
 
 @-webkit-keyframes move-up {
   0% {
@@ -95,11 +97,29 @@ h1.title {
 .best-container:after {
   content: "Best"; }
   
+  
+  p.wait-for-it {
+  	cursor:wait;
+  }
+  
+  span.show {
+  	display:none;
+  }
+  
+  p:hover span.show {
+  	display:inline;
+  }
+  
+  p:hover span.no-show {
+  	display:none;
+  }
 
+	
 p {
   margin-top: 0;
   margin-bottom: 10px;
-  line-height: 1.65; }
+  line-height: 1.65;
+  color: rgb(255,0,0); }
 
 a {
   color: #776e65;
@@ -150,7 +170,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: url('../tile-sets/sbig.jpg');
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -514,7 +534,9 @@ hr {
   float: right; }
 
 .game-explanation {
-  margin-top: 50px; }
+  margin-top: 50px;
+  color:darkviolet;
+  }
 
 @media screen and (max-width: 520px) {
   html, body {
